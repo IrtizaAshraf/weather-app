@@ -1,16 +1,109 @@
-body {
+/* body {
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One:ital@1&family=Lilita+One&family=Merriweather:ital,wght@1,700&family=Pixelify+Sans&family=Reem+Kufi+Fun&family=Young+Serif&display=swap');
+.head{
+      font-family: 'Young+Serif&display=swap';
 }
+
+.main{
+      flex: flex;
+      text-align: center;
+      justify-content: center; 
+      min-height: 100vh;
+      background: url(accets/bg\ cloud.jpg);
+      background-position: center;
+      background-size: cover;
+}
+/* .container{
+      background: rgb(51, 96, 185);
+      backdrop-filter: blur(60px);
+      border: 3px solid rgba(43, 51, 175, 0.601) ;
+      box-shadow: 10px 10px 5px 10px #3b78f3;
+} */
+ 
 
 .weather-container {
       text-align: center;
 }
 
-#weather-info {
-      margin-top: 20px;
+
+.search-box  i{
+      margin-top: 10px;
+      font-size: 28px;
+      color: rgb(49, 50, 52);
+      cursor: pointer;
+      margin-left: 10px;
+}
+
+.search-box input {
+      border: 2px solid rgba(155, 139, 139, 0.654);  
+      padding: 0 48px 0 42px;
+      text-transform: capitalize;
+      font-weight: 500;
+      color: aliceblue;
+      
+}
+
+.search-box input::placeholder{
+      color: aliceblue;
+      text-transform: capitalize;
+}
+.search-box button {
+      position: absolute;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 28px;
+      color: aliceblue;
+      cursor: pointer;
+      padding: 0 40px 0 5px;
+}
+
+
+#weather-deatail {
+      margin: 0 auto;
+      justify-content: center;
+}
+  
+.weathercontainer {
+      margin-top: 10%;
+      width: 50%;
+      padding: 20px 0px;
+      text-align: center;
+      border-radius: 10px;
+      /* background: rgb(51, 96, 185); */
+      backdrop-filter: blur(60px);
+      border: 3px solid rgba(43, 51, 175, 0.601);
+      box-shadow: 10px 10px 5px 10px #3b78f3;
+}
+  
+.weather-box img {
+      margin: auto;
+      text-align: center;
+      width: 30%;
+     
+  
+}
+
+.waether-deatali .homudity,
+.waether-deatali .wind{
+     display: flex;
+      align-items: center;
+      width: 50%;
+
+}
+
+.waether-deatali i{
+      font-size: 50px;
+      margin-right: 10px;
 }

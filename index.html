@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awasome link  -->
+    <script src="https://kit.fontawesome.com/09a3d3d6d4.js" crossorigin="anonymous"></script>
+    <!-- style sheet link  of web  -->
     <link rel="stylesheet" href="style.css">
+    <!-- Tailwindcss of link  -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- /// title name   off website  -->
     <title>Weather App</title>
 </head>
-<body>
-    <div class="weather-container">
-        <input type="text" id="city-input" placeholder="Enter city name">
-        <button onclick="getWeather()">Get Weather</button>
-        <div id="weather-info"></div>
+
+<body class="main bg-slate-500">
+
+    <div id="container">
+        <div class="head text-center">
+            <h1 class="text-5xl font-bold p-4">Weather App</h1>
+            <h1 class="text-2xl font-semibold">Weather Forecast</h1>
+        </div>
+
+        <form class="form">
+            <div class="search-box  relative w-[80%] h-14  m-auto flex  ">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="absolute w-[100%] h-[100%] bg-transparent rounded-xl " type="text"
+                    placeholder="Enter your  Location">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            <!-- <img src="accets/cloud 3.png" alt=""> -->
+        </form>
+
+        <div id="weather-deatail" class="flex flex-wrap gap"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
