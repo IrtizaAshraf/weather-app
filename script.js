@@ -40,6 +40,8 @@ const form = document.querySelector('.form');
 const search = document.querySelector('.absolute');
 const weatherDetail = document.querySelector('#weather-deatail');
 
+const APIdata = [];
+
 form.addEventListener('submit', (e) => {
       e.preventDefault();
       weatherDetail.innerHTML = '';
@@ -74,35 +76,36 @@ form.addEventListener('submit', (e) => {
 
                   // console.log(weatherData);
 
-                  weatherDetail.innerHTML = `
+                  APIdata.unshift()
+                  weatherDetail.innerHTML += `
 
-            <div class="weathercontainer">
+      <div class="weathercontainer">
             <div  id="location-box" class="lf-padd">
-            <div    class="d-flex justify-between">
-                <p> <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> &nbsp; ${value.Name}, ${value.Region}, ${value.Country}  </p>
-                <p  id="date">${date} </p>
+                  <div    class="flex justify-evenly">
+                      <p> <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> &nbsp; ${value.Name}, ${value.Region}, ${value.Country}  </p>
+                      <p  id="date">${date} </p>
+                  </div>
+                  <hr>
             </div>
-            <hr>
-        </div>
 
-        <div class="lf-padd">
+        <div class="lf-padd flex justify-evenly">
             <p id="current-weather-head"> Current Weather </p>
             <p  id="time">${time} </p>
         </div>
 
-        <div  class="d-flex gap">
-            <div  class="d-flex">
+        <div  class="flex gap-6">
+            <div  class="flex gap-5 justify-center">
                 <img  id="icon" src="${value.Icon}" alt="icon"  width="120px"  height="120px">
-                <p  id="temp"> ${value.Temperature}<sup id="temp-unit">°C</sup> </p>
+                <p  id="temp" class"text-3xl"> ${value.Temperature}<sup id="temp-unit">°C</sup> </p>
             </div>
 
-            <div>
+            <div class"text-center text-2xl">
                 <p  id="text"> ${value.Text}</p>
                 <p  id="feels-like"> Feels Like &nbsp; ${value.FeelsLike}°</p>
             </div>
         </div>
 
-        <div  class="d-flex gap lf-padd">
+        <div  class="flex flex-wrap gap-6 lf-padd">
             <div>
                 <p class="short-head"> Humidity </p>
                 <p> ${value.Humidity}% </p>
@@ -129,7 +132,7 @@ form.addEventListener('submit', (e) => {
             </div>
         </div>
 
-            </div>
+      </div>
             `;
             search.value=''
             })
