@@ -76,7 +76,7 @@ form.addEventListener('submit', (e) => {
 
                   // console.log(weatherData);
 
-                  APIdata.unshift()
+                  APIdata.unshift(value)
                   weatherDetail.innerHTML += `
 
       <div class="weathercontainer">
