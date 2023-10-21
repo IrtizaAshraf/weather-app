@@ -14,66 +14,75 @@
     <title>Weather App</title>
 </head>
 
-<body class="main bg-slate-500">
-
+<body class="main">
+    <!-- create the container section start -------->
     <div id="container">
+        <!-- write the main head section start ------->
         <div class="head text-center">
             <h1 class="text-5xl font-bold p-4">Weather App</h1>
             <h1 class="text-2xl font-semibold">Weather Forecast</h1>
         </div>
-
+        <!-- write the main head section end ----->
+        
+        <!-- create the form section start  ----->
         <form class="form">
             <div class="search-box  relative w-[80%] h-14  m-auto flex">
                 <i class="fa-solid fa-location-dot"></i>
                 <input class="absolute w-[100%] h-[100%] bg-transparent rounded-xl " type="text"
-                    placeholder="Enter your  Location">
+                placeholder="Enter your  Location">
                 <button class="fa-solid fa-magnifying-glass"></button>
             </div>
-            <!-- <img src="accets/cloud 3.png" alt=""> -->
         </form>
+        <!-- create the form section end  ----->
 
-        <div id="weather-deatail" class="flex flex-wrap gap"></div>
-    </div>
+        <!-- crete the  main data div  ------------------->
+        <div id="weather-deatail" class="flex flex-wrap gap-5"></div>
 
+        <!-- create the  footer sevtion start  -->
+        <section id="footer">
 
-    <section id="footer">
+            <div class="footer">
 
-        <div class="footer">
-
-              <div class="logoinfo" data-aos="fade-up">
+                <div class="logoinfo" data-aos="fade-up">
                     <h2 class="footerhead">Light App</h2>
                     <p>By Irtiza Ashraf</p>
 
                     <div class="contact-details">
-                          <h1 class="footerhead">Contact Us</h1>
-                          <li>
-                                <div class="fa fa-phone"></div><a href="tel:+923122545311">+923352027809</a>
-                          </li>
-                          <li>
-                                <div class="fa fa-envelope"></div><a href="ahsanali45444@gmail.com">irtizashraf802@gmail.com</a>
-                          </li>
+                        <h1 class="footerhead">Contact Us</h1>
+                        <li>
+                            <div class="fa fa-phone"></div><a href="tel:+923122545311">+923352027809</a>
+                        </li>
+                        <li>
+                            <div class="fa fa-envelope"></div><a
+                                href="ahsanali45444@gmail.com">irtizashraf802@gmail.com</a>
+                        </li>
 
                     </div>
-              </div>
+                </div>
 
-              <div class="info" data-aos="fade-up">
+                <div class="info" data-aos="fade-up">
                     <h1 class="footerhead">Social Media's </h1>
                     <div class="social">
-                          <div class="logos">
-                                <a href="https://www.instagram.com/sadlover4849/" target="_blank"
-                                      class="fa fa-instagram"></a>
-                                <a href="https://www.linkedin.com/in/irtiza-ashraf-a56071281/" target="_blank"
-                                      class="fa fa-linkedin"></a>
-                                <a href="https://www.facebook.com/xtalish.larka.589" target="_blank"
-                                      class="fa fa-facebook"></a>
-                                <a href="https://github.com/IrtizaAshraf"
-                                      target="_blank" class="fa fa-github fa-beat-fade"></a>
-                          </div>
+                        <div class="logos">
+                            <a href="https://www.instagram.com/sadlover4849/" target="_blank"
+                                class="fa fa-instagram"></a>
+                            <a href="https://www.linkedin.com/in/irtiza-ashraf-a56071281/" target="_blank"
+                                class="fa fa-linkedin"></a>
+                            <a href="https://www.facebook.com/xtalish.larka.589" target="_blank"
+                                class="fa fa-facebook"></a>
+                            <a href="https://github.com/IrtizaAshraf" target="_blank"
+                                class="fa fa-github fa-beat-fade"></a>
+                        </div>
                     </div>
-              </div>
-        </div>
-        <footer>© Copyright 2023 All Rights Reserved</footer>
-    </section>
+                </div>
+            </div>
+            <footer>© Copyright 2023 All Rights Reserved</footer>
+        </section>
+        <!-- create the  footer sevtion end  -->
+    </div>
+    <!-- create the container section end -->
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
