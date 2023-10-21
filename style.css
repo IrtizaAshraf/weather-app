@@ -56,13 +56,6 @@
       background-size: cover;
 }
 
-/* .container{
-      background: rgb(51, 96, 185);
-      backdrop-filter: blur(60px);
-      border: 3px solid rgba(43, 51, 175, 0.601) ;
-      box-shadow: 10px 10px 5px 10px #3b78f3;
-} */
-
 
 .weather-container {
       text-align: center;
@@ -113,14 +106,11 @@
 
 .weathercontainer {
       margin-top: 10%;
-      width: 50%;
       padding: 20px 0px;
-      text-align: center;
-      border-radius: 10px;
-      /* background: rgb(51, 96, 185); */
+      border-radius: 10px; 
       backdrop-filter: blur(60px);
       border: 3px solid rgba(43, 51, 175, 0.601);
-      box-shadow: 10px 10px 5px 10px #3b78f3;
+      box-shadow: 10px 10px 5px 10px #518bff;
 }
 
 .weather-box img {
@@ -141,4 +131,98 @@
 .waether-deatali i {
       font-size: 50px;
       margin-right: 10px;
+}
+
+
+.data{
+      margin-top: 10%;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: sans-serif;
+      color: crimson;
+}
+
+
+
+.footer {
+      padding: 70px 0;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: rgba(13, 52, 179, 0.849);
+}
+
+
+
+.main-footer h1 {
+      font-size: 22px;
+      line-height: 117%;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: 500;
+}
+
+.main-footer h2 {
+      color: #ffffff;
+      font-weight: 500;
+}
+
+.main-footer ul li a {
+      color: #ffffffcc;
+      text-decoration: none;
+}
+
+footer {
+      background-color: #073ba4af;
+      border-top: 1px solid #0c21c4;
+      font-size: 17px;
+      padding: 15px 5px;
+      color: #4997ea;
+      text-align: center;
+}
+
+footer a {
+      text-decoration: none;
+      color: #ffffff;
+}
+
+.logoinfo p {
+      color: #649ceb;
+      font-size: 25px;
+      font-weight: 800;
+      font-family: 'Libre+Baskerville';
+      margin-top: 5px;
+}
+
+.contact-details {
+      margin-top: 20px;
+}
+
+.contact-details li {
+      list-style: none;
+      margin: 10px 0;
+}
+
+.contact-details li a {
+      text-decoration: none;
+      color: #f1f1f1;
+}
+
+.contact-details .fa {
+      color: #f1f1f1;
+      margin-right: 10px;
+}
+
+.sociallogos {
+      padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+      padding: 0 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 22px;
+}
+
+.com ul li {
+      padding: 5px 0;
 }
