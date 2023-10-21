@@ -149,6 +149,7 @@
       display: flex;
       justify-content: space-evenly;
       background-color: rgba(13, 52, 179, 0.849);
+      /* margin-bottom: 40%; */
 }
 
 .main-footer h1 {
@@ -176,6 +177,7 @@ footer {
       padding: 15px 5px;
       color: #4997ea;
       text-align: center;
+      /* margin-top: 40%; */
 }
 
 footer a {
@@ -223,4 +225,11 @@ footer a {
 
 .com ul li {
       padding: 5px 0;
+}
+
+.footerhead{
+
+      font-size: 20px;
+      font-weight: 500;
+     
 }
